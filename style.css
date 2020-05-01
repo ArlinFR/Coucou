@@ -1,0 +1,79 @@
+body
+{
+    background-color: white;
+    color: black; /* Le texte de la page sera noir */
+    font-family: arial;
+}
+
+h1
+{
+	color: #000E9E;
+	font-family: calibri;
+	font-weight: bold;
+}
+
+h2
+{
+	font-style: italic;
+}
+
+header
+{
+    background: url('images/separateur.png') repeat-x bottom;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#titre_principal
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#logo img
+{
+    width: 80px;
+    height: 80px;
+}
+
+/* Navigation */
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+nav li
+{
+    margin-right: 15px;
+}
+
+nav a
+{
+    font-size: 1.3em;
+    color: black;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #000E9E;
+    border-bottom: 3px solid #000E9E;
+}
+
+section
+{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
