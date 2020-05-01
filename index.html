@@ -1,115 +1,87 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE html>
 <html>
-  <head>
-    <script data-ad-client="ca-pub-2479728045763917" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <title>HTML</title>
-  </head>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Création d'une facture</title>
+    </head>
 
-  <body bgcolor="#FFFFE8" topmargin="5">
+    <body>
+      <header>
+        <h1>Medical Services Espace Pro</h1>
+      </header>
 
-    <!--
-    Ceci est un commentaires ;-)
-    Visible que via la source !
-    -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="creationfacture.html">Créer une facture</a></li>
+          <li><a href="consultarchives.html">Consulter les archives</a></li>
+        </ul>
+      </nav>
 
+      <section>
 
-    <!-- Début Top Menu -->
-    <a name="top"></a>
-    <table border="0" cellpadding="0" cellspacing="0" width="771" align="center">
-      <tr>
-        <td width="200" align="left">
-          <a href="http://www.softastuces.com" title="Accueil de SoftAstuces"><img src="/images/tuto/base_site/logo.gif" width="200" height="60" border="0" alt="SoftAstuces.com"></a>
-        </td>
-        <td width=571 valign="middle">
-          <a href="/astu/index.php"><font color="#400040" size="+1">Les Astuces</font></a> | 
-          <a href="/tuto/index.php"><font color="#860411" size="+1">Les Tutoriaux</font></a> | 
-          <a href="javascript:;"><font color="#0000A0" size="+1">Le Forum</font></a> | 
-          <a href="/download/index.php"><font color="#808080" size="+1">Zone Download</font></a>
-          
-        </td>
-      </tr>
-    </table>
-    <!-- Fin Top Menu -->
-    
-    <!-- 
-    Break...
-    -->
-    
-    <!-- Début Main Table -->
-    <table border="0" cellpadding="0" cellspacing="0" width="771" align="center">
-      
-      <!-- Début Ligne du Haut -->
-      <tr>
-        <td colspan="3"><img src="/images/divers/pixels/pixeln.gif" width="100%" height="1" alt=""></td>
-      </tr>
-      <!-- Fin Ligne du Haut -->
-      
-      <tr>
-        <!-- Début Menu de Gauche -->
-        <td width="161" align="right">
+        <h1>Création d'une facture</h1>
+
+        <form method="post" action="traitement.php">
           <p>
-            <font color="#000000"><span class="important">Les Astuces</span></font><br />
-            <a href="/astu/internet/index.php" style="color:#008000; text-decoration:none">Internet</a><br />
-            <a href="/astu/messa/index.php" style="color:#008000; text-decoration:none">Messagerie</a><br />
-            <a href="/astu/office/index.php" style="color:#008000; text-decoration:none">Office</a><br />
-            <a href="/astu/secu/index.php" style="color:#008000; text-decoration:none">Sécurité</a><br />
-            <a href="/astu/win/index.php" style="color:#008000; text-decoration:none">Windows</a>
+            <label for="surname">Prénom :</label>
+            <input type="text" name="surname" id="surname" />
+
+            <br />
+            <label for="name">Nom :</label>
+            <input type="text" name="name" id="name" />
+
+            <br />
+            <label for="exitdate">Date de sortie :</label>
+            <input type="date" name="exitdate" id="exitdate"/>
+          </p>
+
+          <p>
+            Cochez les prestations :<br />
+            <input type="checkbox" name="sortieambu" id="sortieambu" /> <label for="sortieambu">Sortie de l'ambulance</label><br />
+            <input type="checkbox" name="transportambu" id="transportambu" /> <label for="transportambu">Transport en ambulance</label><br />
+            <input type="checkbox" name="hospit" id="hospit" /> <label for="hospit">Hospitalisation</label><br />
+            <input type="checkbox" name="exambiol" id="exambiol" /> <label for="exambiol">Examen biologique avec analyse</label><br />
+            <input type="checkbox" name="examimag" id="examimag" /> <label for="examimag">Examen par imagerie</label><br />
+            <input type="checkbox" name="transporthelico" id="transporthelico" /> <label for="transporthelico">Transport par hélicoptère</label><br />
+            <input type="checkbox" name="opesimple" id="opesimple" /> <label for="opesimple">Opération simple</label><br />
+            <input type="checkbox" name="opecomplexe" id="opecomplexe" /> <label for="opecomplexe">Opération complexe</label><br />
+            <input type="checkbox" name="prescript" id="prescript" /> <label for="prescript">Prescription médicale</label><br />
+            <input type="checkbox" name="visitmedic" id="visitmedic" /> <label for="visitmedic">Visite médicale ou consultation</label><br />
+            <input type="checkbox" name="premierssec" id="premierssec" /> <label for="premierssec">Premiers secours dispensés sur place</label><br />
+            <input type="checkbox" name="rdvpsycho" id="rdvpsycho" /> <label for="rdvpsycho">Rendez-vous psychologique</label><br />
           </p>
           
           <p>
-            <font color="#000000"><span class="important">Les Tutoriaux</span></font><br />
-            <a href="/tuto/compression/index.php" style="color:#008000; text-decoration:none">Compression</a><br />
-            <a href="/tuto/site/index.php" style="color:#008000; text-decoration:none">Créer un Site</a><br />
-            <a href="/tuto/maint/index.php" style="color:#008000; text-decoration:none">Maintenance</a><br />
-            <a href="/tuto/messa/index.php" style="color:#008000; text-decoration:none">Messagerie</a><br />
-            <a href="/tuto/mp3/index.php" style="color:#008000; text-decoration:none">MP3</a><br />
-            <a href="/tuto/secu/index.php" style="color:#008000; text-decoration:none">Sécurité</a><br />
-            <a href="/tuto/tweak/index.php" style="color:#008000; text-decoration:none">Tweakage</a>
+            <label for="Mutuelle">Mutuelle</label><br />
+            <select name="mutuelle" id="mutuelle">
+              <option value="non" selected>Non</option>
+              <option value="oui">Oui</option>
+              <option value="gouv">Gouvernement</option>
+              <option value="sans emploi">Sans emploi</option>
+            </select>
           </p>
-        </td>
-        <!-- Fin Menu de Gauche -->
-        
-        <!-- Début Séparatiion Menu/Body -->
-        <td width="10" align="center"><img src="/images/divers/pixels/pixeln.gif" width="1" height="100%" alt=""></td>
-        <!-- Fin Séparatiion Menu/Body -->
-        
-        <!-- Début Main Body -->
-        <td width="600" valign="top">
-          <h1 align="center">HTML !</h1>
-                
-          <!-- Début Mini Tableau ;-) -->
-          <table border="0" cellpadding="3" cellspacing="1" bgcolor="#CCCC00">
-            <tr>
-              <td bgcolor="#FFFFF9">
-                <font color="arial" face="#400040">
-                  <h2>(Balise Hx...)</h2>
-                  Voila une page HTML si vous voulez l'analyser...
-                  <br /><br />
-                  Amusez-vous bien ;-)
-                </font>
-              </td>
-            </tr>
-          </table>  
-          <!-- Fin Mini Tableau -->
-          
-          
-          <br /><br /><br />
-          <div align="right">
-            <a href="#top" onclick="alert('Recherchez <a name=\'top\'></a>');" title="Retourner en Haut"><i>Top...</i></a>
-          </div>
-          
-        </td>
-        <!-- Fin Main Body -->
-      </tr>
-      
-      <!-- Début Ligne du Bas -->
-      <tr>
-        <td colspan="3"><img src="/images/divers/pixels/pixeln.gif" width="100%" height="1" alt=""></td>
-      </tr>
-      <!-- Fin Ligne du Bas -->
-      
-    </table>
-    <!-- Fin Main Table -->
 
-  </body>
+          <p>
+            <label for="praticien">Praticien responsable</label><br />
+            <select name="praticien" id="praticien">
+              <option value="personne" selected></option>
+              <option value="powell">Dorian Powell</option>
+              <option value="peterson">Theresa Peterson</option>
+              <option value="tanner">John Tanner</option>
+              <option value="firestorm">Axelle Firestorm</option>
+              <option value="scott">Helena Scott</option>
+              <option value="mannac">Dimitri Mannac</option>
+              <option value="bennett">Tony Bennett</option>
+              <option value="jefferson">Phillip Jefferson</option>
+              <option value="gomez">Estelle Gomez</option>
+            </select>
+
+            <br />
+            <input type="submit" value="Envoyer" />
+          </p>
+        </form>
+      </section>
+    </body>
 </html>
