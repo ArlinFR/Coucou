@@ -19,7 +19,7 @@ h2
 
 header
 {
-    background: url('images/separateur.png') repeat-x bottom;
+    background: url('separateur.png') repeat-x bottom;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
